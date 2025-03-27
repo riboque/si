@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Screenshot 2025-03-17 224053.png" type="image/x-icon">
+    <title>projeto</title>
+</head>
+<body>
+  <main>
+  
+   <header>  
+    <div id="neto"><h1 id="n">N</h1>
+        <h1 id="eto">ETO.HX</h1>
+      </div>
+<div id="pri">
+
+        
+   <nav>
+
+    <div id="fa">  <ul>
+        <li class="ha"><a href="index.html">HOME</a></li>
+        <li class="ha"><a href="projet.html"> PROJETOS</a></li>
+        <li class="ha"><a href="ajaj.html">RESUMO</a></li>
+       
+        <li class="ha"><a href="contact.html">ME</a></li>
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="48px" width="48px" viewBox="0 -960 960 960" fill="#e8eaed">
+          <path id="line1" d="M160-300h640v-80H160Z"/>
+          <path id="line2" d="M160-480h640v-80H160Z"/>
+        </svg>
+        
+       
+    </ul></div>
+ 
+</nav>
+<script src="svg.js"></script>
+</div>
+
+   </header>
+  
+   
+  <div id="numeros">
+    <h1>‎ ‎ ‎00</h1>
+    <h1 id="d"> 01</h1>
+    <h1>‎‎ ‎02</h1>
+   
+  </div>
+
+
+</main>
+
+    
+  <footer id="footer2">
+     <div id="neto2"><h1 id="n2">N</h1>  
+      <h1 id="eto2">ETO.HX</h1>
+    </div>
+    <div class="footer-top">
+   
+      <div class="footer-section animated">
+        <h3 data-translate="footer_about">Sobre</h3>
+        <ul>
+          <li><a href="#about" data-translate="footer_who">Quem Sou</a></li>
+          
+          <li><a href="#projects" data-translate="footer_projects">Projetos</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section animated">
+        <h3 data-translate="footer_services">Serviços</h3>
+        <ul>
+          <li><a href="#skills" data-translate="footer_skills">Habilidades</a></li>
+          <li><a href="projet.html" data-translate="footer_webdev">Programação em python</a></li>
+          <li><a href="projet.html" data-translate="footer_consult">Consultoria</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section animated">
+        <h3 data-translate="footer_contact">Contato</h3>
+        <ul>
+          <li><a href="#contact" data-translate="footer_contactus">Fale Conosco</a></li>
+          <li><a href="mailto:sequeira.hx@gmail.com">Email: sequeira.hx@gmail.com</a></li>
+          <li><a href="tel:+351963696998">Tel: (351) 963696998</a></li>
+        </ul>
+      </div>
+    </div>
+  
+   
+  
+    <div class="social-icons animated">
+      <a href="https://www.youtube.com/@Se-li" target="_blank">
+        <img src="youtube.svg" alt="Youtube">
+      </a>
+      <a href="https://github.com/riboque" target="_blank">
+        <img src="github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/gelson-sequeira-04333b343/" target="_blank">
+        <img src="linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+  
+    <p class="animated">© 2025 Todos os direitos reservados</p>
+  </footer>
+  
+</body> 
+ <!-- Scarosel principas -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.carousel-track');
+      const slides = Array.from(track.children);
+      const nextButton = document.querySelector('.carousel-button.next');
+      const prevButton = document.querySelector('.carousel-button.prev');
+      const container = document.querySelector('.carousel-track-container');
+      let currentSlide = 1;
+
+      // Clonar os primeiros e últimos slides para criar o efeito de loop infinito
+      const firstClone = slides[0].cloneNode(true);
+      const lastClone = slides[slides.length - 1].cloneNode(true);
+      track.appendChild(firstClone);
+      track.insertBefore(lastClone, slides[0]);
+
+      // Atualizar a lista de slides após a clonagem
+      const updatedSlides = Array.from(track.children);
+
+      // Função que atualiza o carrossel: centraliza o slide ativo e atualiza as opacidades
+      function updateCarousel() {
+        const containerWidth = container.getBoundingClientRect().width;
+        const slideWidth = updatedSlides[0].getBoundingClientRect().width;
+        const effectiveSlideWidth = slideWidth + 10; // 50px de margem total
+        const offset = currentSlide * effectiveSlideWidth - (containerWidth - slideWidth * 3) / 3;
+        track.style.transform = 'translateX(-' + offset + 'px)';
+
+        updatedSlides.forEach((slide, index) => {
+          slide.classList.toggle('active', index === currentSlide || index === currentSlide + 1);
+        });
+      }
+
+      // Função para ir para o próximo slide (loop infinito)
+      nextButton.addEventListener('click', function() {
+        currentSlide++;
+        track.style.transition = 'transform 0.5s ease-in-out';
+        updateCarousel();
+        if (currentSlide >= updatedSlides.length - 1) {
+          setTimeout(() => {
+            track.style.transition = 'none';
+            currentSlide = 1;
+            updateCarousel();
+          }, 500);
+        }
+      });
+
+      // Função para ir para o slide anterior (loop infinito)
+      prevButton.addEventListener('click', function() {
+        currentSlide--;
+        track.style.transition = 'transform 0.5s ease-in-out';
+        updateCarousel();
+        if (currentSlide <= 0) {
+          setTimeout(() => {
+            track.style.transition = 'none';
+            currentSlide = updatedSlides.length - 2;
+            updateCarousel();
+          }, 500);
+        }
+      });
+
+      // Recalcula o posicionamento ao redimensionar a janela
+      window.addEventListener('resize', updateCarousel);
+
+      // Inicializa o carrossel
+      updateCarousel();
+    });
+  </script>
+  <!-- Funções para exibir/ocultar subpáginas -->
+   <script>
+    // Funções para exibir/ocultar subpáginas
+    function openSubPage(id) {
+      document.querySelectorAll(".subpage").forEach(function(page) {
+        page.style.display = "none";
+      });
+      document.getElementById(id).style.display = "block";
+    }
+    function closeSubPage(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    // Funções para navegação dos carrosseis das subpáginas
+    function nextSlide(carouselId) {
+      const carousel = document.getElementById(carouselId);
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      let currentIndex = 0;
+      slides.forEach(function(slide, index) {
+        if (slide.classList.contains('active')) {
+          currentIndex = index;
+        }
+      });
+      slides[currentIndex].classList.remove('active');
+      let nextIndex = (currentIndex + 1) % slides.length;
+      slides[nextIndex].classList.add('active');
+    }
+    function prevSlide(carouselId) {
+      const carousel = document.getElementById(carouselId);
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      let currentIndex = 0;
+      slides.forEach(function(slide, index) {
+        if (slide.classList.contains('active')) {
+          currentIndex = index;
+        }
+      });
+      slides[currentIndex].classList.remove('active');
+      let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      slides[prevIndex].classList.add('active');
+    }
+  </script>
+ 
+</html>

@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{margin: 0;padding: 0;}
+    body{
+    background-color: transparent;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+
+    #neto{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 50px;
+       #eto {
+        color: #0ce394;
+        text-align: center;
+        font-size: 2em;
+     
+       
+      font-family: "Grechen Fuemen";
+      
+      
+      }
+      #n {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 2em;
+        
+        font-family: "Grechen Fuemen";
+        
+      }
+    }
+     
+
+#pri{
+    width: 71.5%;
+   
+     margin-left: -20px;
+nav{
+  
+   
+    #fa{
+    display: flex;
+   margin-left: 950px;
+  margin-top: -10px;
+
+ul{
+    display: flex;
+    list-style: none;
+  
+    margin-top: 40px;
+  
+    li{
+        margin-top: -30px;
+        margin-left: 5px;
+        font-size: 20px;
+        padding: 10px;
+        transition: background-color 0.5s, color 0.5s;
+
+        a{font-size: 15px;
+            font-weight: 300;
+            text-decoration: none; 
+            color: #ffffff;
+          
+            font-family: "Lato", sans-serif;
+            text-align: center;
+           
+           
+        }
+    }
+
+}
+
+}}
+
+}
+
+
+
+
+}
+.ha:hover {
+    animation: spin 0.5s ease-in-out;
+background-color: var(--secondary);
+transition: background-color 0.5s, color 0.5s;
+   }
+#see{
+  width: 250px;
+  height: 30px;
+margin-top: 10px;
+
+}
+:root {
+  --primary: #06141B;
+  --secondary: #253745;
+  --tertiary: #4B4F61;
+  --text-light: #F0F0F0;
+}
+
+
+
+
+
+
+
+main {
+height: 100vh;
+width: 100%;
+
+background-attachment: fixed;
+background-image: url(montanha.jpg);
+ background-size: 100%;
+background-repeat: no-repeat;
+ #numeros{
+  margin-left: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+margin-top: 150px;
+  color: gray;
+  #d{ color: lightgray;
+    font-size: 3em;
+    opacity: 1;
+    
+  
+  }
+ }
+}
+
+
+/* ====================
+   Animação "Reveal"
+==================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+
+
+
+
+
+/* ====================
+   Footer
+==================== */
+
+#footer2 {
+    background: #373636;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    font-family: sans-serif;
+      #neto2{
+      display: flex;
+      margin-top: 10px;
+      margin-left: 50px;
+     #eto2 {
+      color: #0ce394;
+      text-align: center;
+      font-size: 2em;
+   
+     
+    font-family: "Grechen Fuemen";
+    
+    
+    }
+    #n2 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 2em;
+      
+      font-family: "Grechen Fuemen";
+      
+    }
+  }
+  
+  /* Layout flexível para a área superior do footer */
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  
+  }
+   
+
+  }
+  
+  .footer-section {
+    padding: 10px;
+    flex: 1 1 250px;
+    max-width: 300px;
+ 
+  }
+  
+ 
+.footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Animação de underline para os links */
+  .footer-section a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+  }
+  
+  .footer-section a:hover::after {
+    width: 100%;
+  }
+  
+  /* Estilização dos ícones sociais */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Linha divisória */
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ffffff;
+    margin: 20px 0;
+  }
+  
+  /* Animação fadeInUp */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Classe para elementos animados */
+  .animated {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    margin-top: 20px;
+  }
+  
+  /* Delays progressivos para efeito escalonado */
+  .footer-section:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .footer-section:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .footer-section:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .social-icons {
+    animation-delay: 0.8s;
+  }
+  
+  p.animated {
+    animation-delay: 1s;
+  }
+  
+  /* Ajustes responsivos para telas menores */
+  @media (max-width: 600px) {
+    #footer2 {
+      padding: 15px;
+    }
+    
+    .footer-top {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .footer-section {
+      flex: 1 1 auto;
+      max-width: none;
+    }
+    
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab - Design Minimalista</title>
+  <style>
+    /* RESET BÁSICO */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Fundo levemente cinza */
+      color: #000;
+    }
+
+    header {
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #666;
+    }
+
+    /* SEÇÃO PRINCIPAL */
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 80vh;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .hero-text {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: lowercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Texto vertical (ex: "100") */
+    .hero-number {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 6rem;
+      font-weight: 300;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      opacity: 0.1; /* Efeito de marca d’água */
+    }
+
+    /* Imagem do modelo */
+    .hero-image {
+      max-width: 45%;
+      margin: 0 auto;
+      position: relative;
+      left: 25%;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* SEÇÃO DE PRODUTOS / INFORMAÇÕES */
+    .products-section {
+      padding: 2rem;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .products-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .products-section p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #333;
+    }
+
+    /* RODAPÉ */
+    footer {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="logo">lab.</div>
+    <nav>
+      <ul>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SEÇÃO PRINCIPAL (HERO) -->
+  <section class="hero">
+    <div class="hero-text">lab.</div>
+    <div class="hero-number">100</div>
+    <div class="hero-image">
+      <!-- Substitua pela imagem do modelo, mantendo estilo monocromático ou com tratamento -->
+      <img src="_Bounty_Hunter___Artist_Felipe_Cavalcanti_-removebg-preview.png" alt="Modelo Minimalista" />
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE PRODUTOS / INFORMAÇÕES -->
+  <section class="products-section">
+    <h2>New Arrivals</h2>
+    <p>XAU18 Mechanism Soft Collection 2019</p>
+    <a href="#" class="cta-button">Ver Coleção</a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

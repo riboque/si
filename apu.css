@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{margin: 0;padding: 0;}
+    body{
+    font-family: 'Roboto', sans-serif;
+
+  background-size: 100%;
+    background-repeat: no-repeat;
+   
+
+}
+#conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   backdrop-filter: blur(10px);
+   background: url(SnapTik_App_7464313323278929185-HD.mp4);
+}
+
+
+
+
+
+header{
+    width: 100%;
+    height: 60px;
+   
+    display: flex;
+ 
+    #neto{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 50px;
+       #eto {
+        color: #0ce394;
+        text-align: center;
+        font-size: 2em;
+     
+       
+      font-family: "Grechen Fuemen";
+      
+      
+      }
+      #n {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2em;
+        
+        font-family: "Grechen Fuemen";
+        
+      }
+    }
+     
+
+#pri{
+    width: 71.5%;
+   
+     margin-left: -20px;
+nav{
+  
+   
+    #fa{
+    display: flex;
+   margin-left: 550px;
+  margin-top: -10px;
+
+ul{
+    display: flex;
+    list-style: none;
+  
+    margin-top: 40px;
+  
+    li{
+        margin-top: -30px;
+        margin-left: 5px;
+        font-size: 20px;
+        padding: 10px;
+        transition: background-color 0.5s, color 0.5s;
+
+        a{font-size: 15px;
+            font-weight: 300;
+            text-decoration: none; 
+            color: #000000;
+          
+            font-family: "Lato", sans-serif;
+            text-align: center;
+           
+           
+        }
+    }
+
+}
+
+}}
+
+}
+
+#ba {
+    button {
+        width: 150px;
+        height: 35px;
+        background-color: #fff;
+        margin-top: 10px;
+        border: 1px solid #0ce394;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    button:hover {
+        background-color: #0ce394;
+        color: #fff;
+    }
+    button:active {
+        animation: spin 0.5s ease-in-out;
+    }
+}
+
+@keyframes transition {
+    from {
+        transition: 0.5s;
+    }
+    to {
+        transition: 1s;
+    }
+}
+
+
+
+
+
+
+
+  
+
+}
+.ha:hover {
+    animation: spin 0.5s ease-in-out;
+background-color: #0ce394;
+transition: background-color 0.5s, color 0.5s;
+   }
+#see{
+  width: 250px;
+  height: 30px;
+margin-top: 10px;
+
+}
+
+#dd{
+    width: 100%;
+    height: 100vh;
+    
+}
+#x{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* ====================
+     Perfil e Apresentação
+  ==================== */
+  #eu {
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+    margin-left: 650px;
+    margin-top: 0px;
+  }
+  #euk {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: -1300px;
+  }
+  #ja {
+    color: rgb(176, 41, 41);
+    text-align: center;
+    padding: 0;
+    font-size: 3em;
+    font-weight: 900;
+    margin-top: 150px;
+margin-left: -2300px;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+   
